@@ -22,8 +22,8 @@ echo "Starting health checks with ${#KEYSARRAY[@]} configs:"
 
 mkdir -p logs
 
-#RUNNING_FILE="/var/www/html/statuspage-running"
-RUNNING_FILE="/f/Projetos/Frenet/src/statuspage/statuspage-running"
+RUNNING_FILE="/var/www/html/statuspage-running"
+#RUNNING_FILE="/f/Projetos/Frenet/src/statuspage/statuspage-running"
 while [ -f $RUNNING_FILE ];
 do
   for (( index=0; index < ${#KEYSARRAY[@]}; index++))

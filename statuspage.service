@@ -3,7 +3,7 @@ Description=Statuspage Frenet
 After=network.target
 
 [Service]
-ExecStart=/var/www/html/health-check.sh
+ExecStart=sh health-check.sh
 WorkingDirectory=/var/www/html/
 
 Restart=on-failure
